@@ -1,8 +1,8 @@
-package Ex_3_2;
+package Ex_2_2;
 
 import javax.swing.*;
 
-public class EnglishBuilder extends PanelBuilder{
+public class EnglishBuilder extends PanelBuilder {
 
     @Override
     void buildFrame() {

@@ -1,4 +1,4 @@
-package Ex_3_1;
+package Ex_2_1;
 
 public class SummerButton implements Button{
     @Override

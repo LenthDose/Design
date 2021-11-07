@@ -1,7 +1,7 @@
-package Ex_3_2;
+package Ex_2_2;
 
 public class Director {
-    private PanelBuilder builder = null;
+    private PanelBuilder builder;
 
     public Director(PanelBuilder builder) {
         this.builder = builder;
