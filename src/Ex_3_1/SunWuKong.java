@@ -5,18 +5,14 @@ import javax.swing.*;
 public class SunWuKong extends Panel{
 
     public SunWuKong() {
-        JLabel label = new JLabel();
-        ImageIcon img = new ImageIcon("src/img/1.png");
-        label.setIcon(img);
+        JLabel label = new JLabel(new ImageIcon("src/img/1.png"));
         panel.add(label);
         setLayout(frame, panel);
     }
 
     public SunWuKong(SunWuKong target) {
         super(target);
-        JLabel label = new JLabel();
-        ImageIcon img = new ImageIcon("src/img/1.png");
-        label.setIcon(img);
+        JLabel label = new JLabel(new ImageIcon("src/img/1.png"));
         panel.add(label);
         setLayout(frame, panel);
     }
