@@ -7,11 +7,6 @@ public class ChineseBuilder extends PanelBuilder {
 
 
     @Override
-    void buildFrame() {
-        panel.setFrame(new JFrame());
-    }
-
-    @Override
     void buildPanel() {
         panel.setPanel(new JPanel());
     }

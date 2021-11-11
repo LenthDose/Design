@@ -1,6 +1,13 @@
 package Ex_2_1;
 
 public class SummerPaint implements Paint{
+
+    public SummerPaint() {
+        createButton();
+        createComboBox();
+        createTextArea();
+    }
+
     @Override
     public Button createButton() {
         return new SummerButton();

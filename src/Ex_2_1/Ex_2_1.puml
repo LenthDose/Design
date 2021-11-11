@@ -1,0 +1,91 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+Interface Button{
++ paint(): void
+}
+
+Interface TextArea{
++ paint(): void
+}
+
+Interface ComboBox{
++ paint(): void
+}
+
+Class SpringButton{
++ paint(): void
+}
+
+Class SpringTextArea{
++ paint(): void
+}
+
+Class SpringComboBox{
++ paint(): void
+}
+
+Class SummerButton{
++ paint(): void
+}
+
+Class SummerTextArea{
++ paint(): void
+}
+
+Class SummerComboBox{
++ paint(): void
+}
+
+
+Interface Paint{
++ createButton(): Button
++ createTextArea(): TextArea
++ createComboBox(): ComboBox
+}
+
+Class SpringPaint{
++ createButton(): Button
++ createTextArea(): TextArea
++ createComboBox(): ComboBox
+}
+
+Class SummerPaint{
++ createButton(): Button
++ createTextArea(): TextArea
++ createComboBox(): ComboBox
+}
+
+Class Client{
++ paint: Paint
+}
+
+SpringPaint .up.|> Paint
+SummerPaint .down.|> Paint
+
+SpringButton .down.|> Button
+SummerButton .down.|> Button
+
+SpringTextArea .down.|> TextArea
+SummerTextArea .down.|> TextArea
+
+SpringComboBox .down.|> ComboBox
+SummerComboBox .down.|> ComboBox
+
+SpringPaint .down.> SpringButton
+SpringPaint .down.> SpringTextArea
+SpringPaint .down.> SpringComboBox
+
+SummerPaint .down.> SummerButton
+SummerPaint .down.> SummerTextArea
+SummerPaint .down.> SummerComboBox
+
+Client ..> Paint
+
+
+
+
+@enduml

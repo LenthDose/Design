@@ -6,19 +6,14 @@ import java.awt.*;
 public abstract class PanelBuilder {
 
     protected Panel panel = new Panel();
-    abstract void buildFrame();
     abstract void buildPanel();
     abstract void buildButton();
     abstract void buildText();
     abstract void buildLabel();
     abstract void setPanel();
 
-    Panel createPanel(){
-        return panel;
-    }
-
     void setLayout(){
-        JFrame frame = panel.getFrame();
+        JFrame frame = new JFrame();
         JPanel cards = new JPanel(new CardLayout());
         cards.add(Panel(),"p1");
         CardLayout cl = (CardLayout) cards.getLayout();

@@ -5,11 +5,6 @@ import javax.swing.*;
 public class EnglishBuilder extends PanelBuilder {
 
     @Override
-    void buildFrame() {
-        panel.setFrame(new JFrame());
-    }
-
-    @Override
     void buildPanel() {
         panel.setPanel(new JPanel());
     }

@@ -4,19 +4,11 @@ import javax.swing.*;
 
 public class Panel {
 
-    private JFrame frame;
     private JPanel panel;
     private JTextField textField;
     private JLabel label;
     private JButton button;
 
-    public JFrame getFrame() {
-        return frame;
-    }
-
-    public void setFrame(JFrame frame) {
-        this.frame = frame;
-    }
 
     public JPanel getPanel() {
         return panel;
