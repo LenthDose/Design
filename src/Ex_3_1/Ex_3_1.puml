@@ -1,27 +1,24 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+abstract Panel{
++ clone(): Panel
++ setLayout(): void
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class SunWuKong{
++ SunWuKong(Panel)
++ clone(): Object
 }
+
+class Client{
+
+}
+
+SunWuKong .down.|> Panel
+Client -right-> Panel
 
 @enduml

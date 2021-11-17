@@ -5,13 +5,13 @@ import javax.swing.*;
 
 public class Singleton {
 
-    private JFrame frame = new JFrame();
-    private JPanel panel = new JPanel();
     private static Singleton instance;
 
     private Singleton(String name) {
+        JFrame frame = new JFrame();
         frame.setTitle(name+"看月亮");
         JLabel label = new JLabel("月亮的半径是1738.0km,距地球是363300.0km");
+        JPanel panel = new JPanel();
         panel.add(label);
         frame.add(panel);
         frame.setBounds(200,300,300,150);// JFrame最大化

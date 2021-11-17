@@ -6,9 +6,13 @@ public abstract class Panel {
 
     public JFrame frame = new JFrame();
     public JPanel panel = new JPanel();
-    public abstract Object clone();
 
     public Panel() {
+    }
+
+    public Panel(Panel target) {
+        this.frame = target.frame;
+        this.panel = target.panel;
     }
 
     void setLayout(JFrame frame, JPanel panel){
@@ -18,8 +22,5 @@ public abstract class Panel {
         frame.setVisible(true);
     }
 
-    public Panel(Panel target) {
-        this.frame = target.frame;
-        this.panel = target.panel;
-    }
+    public abstract Panel clone();
 }

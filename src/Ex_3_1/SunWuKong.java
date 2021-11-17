@@ -5,16 +5,12 @@ import javax.swing.*;
 public class SunWuKong extends Panel{
 
     public SunWuKong() {
-        JLabel label = new JLabel(new ImageIcon("src/img/1.png"));
-        panel.add(label);
-        setLayout(frame, panel);
+        setLabel();
     }
 
     public SunWuKong(SunWuKong target) {
         super(target);
-        JLabel label = new JLabel(new ImageIcon("src/img/1.png"));
-        panel.add(label);
-        setLayout(frame, panel);
+        setLabel();
     }
 
     @Override
@@ -22,4 +18,10 @@ public class SunWuKong extends Panel{
         return new SunWuKong(this);
     }
 
+
+    void setLabel(){
+        JLabel label = new JLabel(new ImageIcon("src/img/1.png"));
+        panel.add(label);
+        setLayout(frame, panel);
+    }
 }

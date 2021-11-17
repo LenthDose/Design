@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+class Singleton{
+- Singleton(Sting name)
+-instance: Singleton
++getInstance(): Singleton
+}
+
+class Client{}
+
+Singleton --> Singleton
+Client -left-> Singleton
+@enduml
