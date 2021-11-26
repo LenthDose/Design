@@ -11,13 +11,13 @@ public class OperationAdapter implements ProductionOperation{
     }
 
     @Override
-    public void ProductionController() {
+    public void LightController() {
         production.ProductionLight();
         production.ProductionSound();
     }
 
     @Override
-    public void CarController() {
+    public void SoundController() {
         carProduction.CarLight();
         carProduction.CarSound();
     }

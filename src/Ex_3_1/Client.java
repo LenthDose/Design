@@ -7,9 +7,5 @@ public class Client {
     public static void main(String[] args) {
        Panel panel = new SunWuKong();
        panel.clone();
-
-
-
-
     }
 }

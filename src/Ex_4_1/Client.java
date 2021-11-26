@@ -7,7 +7,7 @@ public class Client {
         OtherProduction production = new OtherProduction();
         CarProduction car = new CarProduction();
         operation = new OperationAdapter(production,car);
-        operation.ProductionController();
-        operation.CarController();
+        operation.LightController();
+        operation.SoundController();
     }
 }
