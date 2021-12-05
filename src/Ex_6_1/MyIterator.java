@@ -1,7 +1,7 @@
 package Ex_6_1;
 
 public class MyIterator implements AbstractIterator{
-    private String[] booksName;
+    private final String[] booksName;
     private int index;
 
     public MyIterator(AbstractBookList list) {
